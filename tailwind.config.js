@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       colors: {
         'gold': '#dda409',
+        'myGray': '#F6F8FC',
+        'star': '#FCB502',
       },
       typography: (theme) => ({
         DEFAULT: {
