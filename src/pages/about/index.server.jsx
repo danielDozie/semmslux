@@ -4,9 +4,11 @@ import { CgShoppingBag } from 'react-icons/cg'
 import {FaShippingFast, FaPercent} from 'react-icons/fa'
 import {CgDesignmodo} from 'react-icons/cg'
 import {GrStar} from 'react-icons/gr'
+import {MdLocationPin,MdOutlineAlternateEmail,MdSettingsPhone} from 'react-icons/md'
 
 
 const About = () => {
+
     return (
         <>
             <Header />
@@ -14,6 +16,8 @@ const About = () => {
             <BenefitSection />
             <FeaturedProducts />
             <ParallaxSection />
+            <Highlights />
+            <FooterSection />
         </>
     )
 }
@@ -21,21 +25,203 @@ const About = () => {
 export default About
 
 
+
+export function FooterSection() {
+    const year  = new Date().getFullYear();
+    return (<>
+        <div className="w-full">
+            <div className="flex">
+                <div className="flex flex-wrap bg-slate-100 w-[60%] py-16 bg-gradient-to-r from-black to-gray-700 bg-blend-multiply p-3">
+                <div className="w-[40%] mx-auto ">
+                    <div className="w-[140px] py-6">
+                    <img src="/image/semmsluxuries.svg" alt="semmsluxuries" />
+                    </div>
+                    <div className="flex text-gold gap-2 pb-3">
+                        <MdLocationPin size="27"/>
+                        <p className="text-myGray font-normal text-[15px]">1810 First Oaks St, Richmond, TX 77406</p>
+                    </div>
+                    <div className="flex text-gold gap-2 pb-3">
+                        <MdOutlineAlternateEmail MdSettingsPhone size="20"/>
+                        <p className="text-myGray font-normal text-[15px]">support@semmsluxury.com</p>
+                    </div>
+                    <div className="flex text-gold gap-2 pb-3">
+                        <MdSettingsPhone size="20"/>
+                        <p className="text-myGray font-normal text-[15px]">+1 (281)-762-7955</p>
+                    </div>
+                </div>
+                <div className="w-[20%] mx-auto">
+                    <h1 className="text-2xl font-bold text-myGray underline underline-offset-8 pt-6">
+                        Information
+                    </h1>
+                    <div className="mt-8">
+                            <ul>
+                                <li className="text-myGray font-normal text-[15px] pb-2">
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li className="text-myGray font-normal text-[15px] pb-2">
+                                    <a href="#">Collections</a>
+                                </li>
+                                <li className="text-myGray font-normal text-[15px] pb-2">
+                                    <a href="#">Discover</a>
+                                </li>
+                                <li className="text-myGray font-normal text-[15px] pb-2">
+                                    <a href="#">Our Story</a>
+                                </li>
+
+                                
+                            </ul>
+                        </div>
+                </div>
+                </div>
+                <div className="flex flex-auto bg-white px-8 py-16 mx-auto justify-apart gap-x-28">
+                    <div className="min-w-[20%]">
+                    <h1 className="text-2xl font-bold text-gray-800 underline underline-offset-8 pt-6">
+                            Useful Links
+                        </h1>
+                        <div className="mt-8">
+                            <ul>
+                                <li className="text-gray-800 font-normal text-[15px] pb-2">
+                                    <a href="#">Account</a>
+                                </li>
+                                <li className="text-gray-800 font-normal text-[15px] pb-2">
+                                    <a href="#">Delivery</a>
+                                </li>
+                                <li className="text-gray-800 font-normal text-[15px] pb-2">
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li className="text-gray-800 font-normal text-[15px] pb-2">
+                                    <a href="#">Terms & Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="">
+                        <h1 className="text-2xl font-bold text-gray-800 underline underline-offset-8 pt-6">
+                            Supports
+                        </h1>
+                        <div className="mt-8">
+                            <ul>
+                                <li className="text-gray-800 font-normal text-[15px] pb-2">
+                                    <a href="#">Contacts</a>
+                                </li>
+                                <li className="text-gray-800 font-normal text-[15px] pb-2">
+                                    <a href="#">Returns</a>
+                                </li>
+                                <li className="text-gray-800 font-normal text-[15px] pb-2">
+                                    <a href="#">Sitemap</a>
+                                </li>
+                                <li className="text-gray-800 font-normal text-[15px] pb-2">
+                                    <a href="#">Affiliates</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="flex p-3 justify-between font-light text-gray-800 text-sm border-t-2 border-yellow-500">
+                 <div className="pl-20 text-left">
+                     <p>Copyright &copy; {year}. SEMMS Luxury Luggages.</p>
+                </div>
+                 <div className="flex pr-20 gap-x-8">
+                     <a href="#">
+                     <p>Facebook</p>
+                     </a>
+                     <a href="#">
+                     <p>Instagram</p>
+                     </a>
+                     <a href="#">
+                     <p>Tiktok</p>
+                     </a>
+                </div>
+            </div>
+        </div>
+    </>)
+}
+
+export function Highlights(){
+    return (
+        <>
+            <div className="w-ful min-h-full bg-myGray">
+                <div className="container mx-auto px-4 py-24">
+                    <div className="flex flex-wrap">
+                        <div className="w-full md:w-1/2 lg:w-1/3 p-3">
+                            <div className="bg-white rounded-lg shadow-lg p-8">
+                                <div className="flex items-center">
+                                    <div className="flex-shrink-0">
+                                        <FaShippingFast className="w-10 h-10 text-gold" />
+                                    </div>
+                                    <div className="ml-4">
+                                        <h5 className="font-bold uppercase text-gray-600">Free Shipping</h5>
+                                        <p className="text-gray-800">Free shipping on all orders over $800</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-full md:w-1/2 lg:w-1/3 p-3">
+                            <div className="bg-white rounded-lg shadow-lg p-8">
+                                <div className="flex items-center">
+                                    <div className="flex-shrink-0">
+                                        <FaPercent className="w-10 h-10 text-gold" />
+                                    </div>
+                                    <div className="ml-4">
+                                        <h5 className="font-bold uppercase text-gray-600">30% Off</h5>
+                                        <p className="text-gray-800">All items are 30% off</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-full md:w-1/2 lg:w-1/3 p-3">
+                            <div className="bg-white rounded-lg shadow-lg p-8">
+                                <div className="flex items-center">
+                                    <div className="flex-shrink-0">
+                                        <CgDesignmodo className="w-10 h-10 text-gold" />
+                                    </div>
+                                    <div className="ml-4">
+                                        <h5 className="font-bold uppercase text-gray-600">Free Returns</h5>
+                                        <p className="text-gray-800">Free returns on all items</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div className="w-[80%] mx-auto px-4 py-16">
+                            <div className="my-4 mx-auto text-center">
+                                <h1 className="text-2xl font-bold text-gray-500">
+                                    Newsletter
+                                </h1>
+                                <h1 className="text-5xl font-bold text-gray-800 py-4 ">Let&apos;s keep in touch with you</h1>
+                                <p className="text-md font-regular text-gray-500">Subscribe to our newsletter for new products alert and updates on our stories</p>
+                                <div className="flex flex-wrap py-8 mx-auto justify-center">
+                                    <input type="text" className="w-1/2 p-4" placeholder="Enter your email" />
+                                    <button className="bg-gold text-white font-semibold py-2 px-4 hover:bg-gray-800 hover:text-white">Subscribe</button>
+                                </div>
+                                <p className="text-gray-400 text-[10px]  -mt-6">*We won&apos;t spam your email. We promise.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
+        </>
+    )
+}
+
+
 const parallax = "https://images.unsplash.com/photo-1457972657980-4c9fddebec8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80";
 
 export function ParallaxSection() {
     return (
         <div className="bg-cover bg-center bg-no-repeat bg-fixed" style={{ backgroundImage: `url(${parallax})` }}>
-            <div className="bg-black bg-opacity-50 h-screen pt-20 w-full" >
+            <div className="bg-black bg-opacity-50 h-screen pt-20 w-full">
 
                 <div className="w-[80%] mx-auto px-4 py-16">
                     <div className="flex flex-col">
                         <div className="bg-white w-[60%] p-8 rounded-sm">
-                            <h1 className="text-gray-800 text-xl font-medium">
-                                Top Quality Leather Luggages Company
+                            <h1 className="text-gray-600 text-xl font-medium">
+                                Top Quality Leather Luggage Company
                             </h1>
-                            <h1 className="text-gray-800 text-4xl font-bold uppercase py-4">
-                                Trading since 2019
+                            <h1 className="text-gray-600 text-4xl font-bold uppercase py-4">
+                                Established since 2019
                             </h1>
                             <p className="text-gray-500 text-md">
                                 Howerver you wish to pack. Whatever your need is, we have the solution. 
@@ -279,6 +465,8 @@ export function HeroSection() {
             </div>
         </>)
 }
+
+
 
 export function Header() {
     return (
