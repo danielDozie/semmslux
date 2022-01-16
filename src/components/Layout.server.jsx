@@ -6,8 +6,8 @@ import {
 } from '@shopify/hydrogen';
 import gql from 'graphql-tag';
 
-import Header from './Header.client';
-import Footer from './Footer.server';
+import Header from './Header.server.jsx';
+import Footer from './Footer.server.jsx';
 import {useCartUI} from './CartUIProvider.client';
 import Cart from './Cart.client';
 
@@ -52,9 +52,8 @@ export default function Layout({children, hero}) {
           />
           <Cart />
         </div>
-        <main role="main" id="mainContent" className="relative bg-gray-50">
-          {hero}
-          <div className="mx-auto max-w-7xl p-4 md:py-5 md:px-8">
+        <main role="main" id="mainContent" className="relative">
+          <div className="mx-auto">
             {children}
           </div>
         </main>
