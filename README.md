@@ -1,6 +1,6 @@
 # SEMMS Luxe App
 
-E-commerce website using shopify custom frontend
+E-commerce website using shopify's Hydrogen framework for custom storefront.
 
 ## Getting started
 
