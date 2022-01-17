@@ -4,7 +4,7 @@ import BenefitSection from './BenefitSection.server.jsx';
 import HeroSection from './HeroSection.server.jsx';
 import FeaturedProducts from './FeaturedProducts.server.jsx';
 import ParallaxSection  from './ParallaxSection.server.jsx';
-import HighlightSection  from './homepage/HighlightSection.server.jsx';
+import HighlightSection  from './HighlightSection.server.jsx';
 
 /**
  * A server component that displays the content on the homepage of the Hydrogen app

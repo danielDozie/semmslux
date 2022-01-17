@@ -8,10 +8,10 @@ export default function Footer({ collection, product }) {
   return (
     <>
       <div className="w-full">
-        <div className="flex">
-          <div className="flex flex-wrap bg-slate-100 w-[60%] py-16 bg-gradient-to-r from-black to-gray-700 bg-blend-multiply p-3">
-            <div className="w-[40%] mx-auto ">
-              <div className="w-[140px] py-6">
+        <div className="flex flex-col md:flex-row">
+          <div className="flex flex-wrap bg-slate-100 w-full md:w-[60%] py-16 bg-gradient-to-r from-black to-gray-700 bg-blend-multiply p-3">
+            <div className="w-full md:w-[40%] mx-4 md:ml-20">
+              <div className="w-[160px] md:w-[140px] py-6">
                 <img src="/image/semmsluxuries.svg" alt="semmsluxuries" />
               </div>
               <div className="flex text-gold gap-2 pb-3">
@@ -27,7 +27,7 @@ export default function Footer({ collection, product }) {
                 <p className="text-myGray font-normal text-[15px]">+1 (281)-762-7955</p>
               </div>
             </div>
-            <div className="w-[20%] mx-auto">
+            <div className="w-full md:w-[20%] mx-4 hidden md:block">
               <h1 className="text-2xl font-bold text-myGray underline underline-offset-8 pt-6">
                 Information
               </h1>
@@ -45,13 +45,11 @@ export default function Footer({ collection, product }) {
                   <li className="text-myGray font-normal text-[15px] pb-2">
                     <a href="#">Our Story</a>
                   </li>
-
-
                 </ul>
               </div>
             </div>
           </div>
-          <div className="flex flex-auto bg-white px-8 py-16 mx-auto justify-apart gap-x-28">
+          <div className="flex flex-auto bg-white dark:bg-black dark:text-myGray px-8 md:px-8 py-16 md:mx-auto justify-apart gap-x-20 md:gap-x-28">
             <div className="min-w-[20%]">
               <h1 className="text-2xl font-bold text-gray-800 underline underline-offset-8 pt-6">
                 Useful Links
@@ -96,11 +94,11 @@ export default function Footer({ collection, product }) {
             </div>
           </div>
         </div>
-        <div className="flex p-3 justify-between font-light text-gray-800 text-sm border-t-2 border-yellow-500">
-          <div className="pl-20 text-left">
+        <div className="flex flex-col-reverse md:flex-row p-3 md:justify-between font-light text-gray-800 text-sm border-t-2 border-yellow-500">
+          <div className=" md:pl-20 text-center md:text-left">
             <p>Copyright &copy; {year}. SEMMS Luxury Luggages.</p>
           </div>
-          <div className="flex pr-20 gap-x-8">
+          <div className="flex pb-2 md:pb-0 justify-center md:pr-20  gap-y-4 md:gap-x-8">
             <a href="#">
               <p>Facebook</p>
             </a>

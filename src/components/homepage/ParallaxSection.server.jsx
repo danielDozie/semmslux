@@ -9,7 +9,7 @@ export default function ParallaxSection() {
 
                 <div className="w-[80%] mx-auto px-4 py-16">
                     <div className="flex flex-col">
-                        <div className="bg-white w-[60%] p-8 rounded-sm">
+                        <div className="bg-white w-full p-4 md:w-[60%] md:p-8 rounded-sm">
                             <h1 className="text-gray-600 text-xl font-medium">
                                 Top Quality Leather Luggage Company
                             </h1>
